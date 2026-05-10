@@ -82,7 +82,7 @@ public class MainActivity extends Activity {
         Intent intent = getIntent();
         String action = intent.getAction();
         Uri data = intent.getData();
-        String url = "https://m.youtube.com/feed/";
+        String url = "https://m.youtube.com/feed/subscriptions/";
         if (Intent.ACTION_VIEW.equals(action) && data != null) {
             url = data.toString();
         } else if (Intent.ACTION_SEND.equals(action)) {
